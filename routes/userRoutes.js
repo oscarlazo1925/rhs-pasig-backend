@@ -23,6 +23,7 @@ router.put("/profile", protect, async (req, res) => {
 
 // 🔹 Scan QR route
 router.post("/scan-qr", async (req, res) => {
+  console.log(req.body.qrCode, '/scan-qr')
   try {
     const { qrCode } = req.body;
 
@@ -41,9 +42,10 @@ router.post("/scan-qr", async (req, res) => {
       data: user
     });
   } catch (error) {
-    console.error("QR Scan Error:", error);
-    res.status(500).json({ message: "Server error" });
+    console.error("QR Scan Error:", error);   // 👈 this should print the actual problem
+    res.status(500).json({ message: "Server error", error: error.message });
   }
 });
+
 
 module.exports = router;
