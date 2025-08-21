@@ -1,7 +1,7 @@
 const express = require("express");
 const userController = require("../controllers/userController");
 const { protect } = require("../middleware/authMiddleware");
-
+const User = require("../models/User"); // ✅ import your User model
 
 
 
@@ -31,7 +31,7 @@ router.post("/scan-qr", async (req, res) => {
       return res.status(400).json({ message: "QR code is required" });
     }
 
-    const user = await user.findOne({ qrCode });
+    const user = await User.findOne({ qrCode });
 
     if (!user) {
       return res.status(404).json({ message: "User not found" });
