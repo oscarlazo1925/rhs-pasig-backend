@@ -20,4 +20,30 @@ router.put("/profile", protect, async (req, res) => {
   res.json(req.user);
 });
 
+
+// 🔹 Scan QR route
+router.post("/scan-qr", async (req, res) => {
+  try {
+    const { qrCode } = req.body;
+
+    if (!qrCode) {
+      return res.status(400).json({ message: "QR code is required" });
+    }
+
+    const user = await User.findOne({ qrCode });
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    res.json({
+      message: "User found",
+      data: user
+    });
+  } catch (error) {
+    console.error("QR Scan Error:", error);
+    res.status(500).json({ message: "Server error" });
+  }
+});
+
 module.exports = router;
