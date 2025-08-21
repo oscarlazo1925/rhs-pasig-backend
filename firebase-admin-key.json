@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "indioxoftrade",
+  "private_key_id": "c4ba468ab5969a7e83342bfab2d288786a8e4345",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCkt+z2rszcezLr\nldqw3/RDfFWsEW4ZBHA39xsolNd9gT568GS90xtR/a8/NLTLjgtN6a9vdcP6HyR4\npSKRRBlQ0V/ljhXXRIGbZD7/QtF6ldX6PE+LVGJUGqXbLvX06HDukPp+KGpBp91N\nrOOJWu8oBL69/QPwWcAAEsvIEWznOZw34qQx5WRvJt1Wj4eiXnHN+R2HLOXuOR8K\n5pQivldNdw3U+VJrAjVKlr2yu1vmtfSi8bf0AmoosPimEFqclNo6b/rjDEMio4AW\n1K+qisG5TGandI9sJAyalT2EtIlabIc4XHAjf/sWz+WGtWPCPNmgOH2R55xFHQHv\n430vOJyTAgMBAAECggEAOnxsETMD3o2ICQpOelsqugOdz9johM2EovqElCY1VYTc\nkH5m5tfcbYJsBT9LqrMm5GVDO4pPKbKBGq1X1sidTIrrR/DpZGQYuPohPDWXd7VY\nIt/jRo+R0lcb6PWFs44M+0hTCRSElgdqlrf6mrzFCiqVJ5R9H4xeligWX1WAm6DR\nLDpt6jHmvKcXQYwdEce28wVwD5omGDYItGwXqTTVm+/IUEWou+fVdKRQDJToyjbi\nh4JXltNhbheUwBH7WQXPSbSZ7RBp0DQHo6tMjoUXmtLWYdzS3eO0g42PIbSQSwJ4\nJSp3aB5hb0wJFQhrBNPm5PERy13e8OfzmebgBQ/KEQKBgQDS5eCDJf4ysm/uLNM3\nv1MRfbPqxs0fIPQvlvfztIvKKtfxW3XXCyOSKc9dd4qiFfa+5ECTN5GQgsnslDji\nPr5z7iq++PP3OigPrKsAL65UJr60ct+iVG8YT438Cxi9OXkcHJ58M+SAC14NOviI\nWWUGD84g0ZJ1osQeaevqrWbstwKBgQDH8dbkd26FmtrBZAFfEeEZ61F2ul14OgbP\n38euY0dbVb1+eTpVlC+A8+sI077kM7fUtY0inGqZQJduu6vpVrfKZJtEpzQN2qTw\nDhJcOWKe0K8VL/KrzZiLZJgzgvDnQzj0scr426zjvIyeLN+kf9j+4L9OYPolFd95\nE5IIAGbrBQKBgGoGz9yfWTC7rLIdLwMz2NtOSwmZcL5ZnuneCEIpXq4A5BefV5sJ\nKpTtGCdxVe0vBaHqttxMb44rcsDRs9dqm+1Eq5DfMCf2wPVAZafuUMJVyEKIDg5a\nTI/4TvWLzqAzKMQNT1A59oK5NEuKfjBuYO+vOn4dXnhtoBN6RPTywG/5AoGAPoor\nkCy3Oj0UnZb9QtJh2Wycf4mNgPSNeunhGG/fOvdXnT6n+2qtbSVeZ9VriQ+QOY1M\nBv5r7WGhvDYhcIv6UukjE9dE1eyE2L1eCtC8Qza8/OCRhCF7zGX7oWkclwmUwBz4\ngtybeGRai4M3tMl0g0yjKg31UDJGQyXW8H/HsU0CgYAwBPCd9xWnTdT/uxT3KSof\nvVooeAKv/YvCYp8UgyPfyi9j7E8faxGRZ27qUEXdcfRWEzdfx2LE3Q5KHU9nGsR+\nmtA8r3bW+Np2Y6lnBaLfImiJOposHi4xauW57UamuPxqtfhA3KBKH7Rrv8uR3ibs\nddlIefQ26HQNQ0EzXkyU9A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@indioxoftrade.iam.gserviceaccount.com",
+  "client_id": "101523526789873103266",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40indioxoftrade.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
