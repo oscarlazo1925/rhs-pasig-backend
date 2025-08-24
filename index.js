@@ -31,7 +31,8 @@ app.use(cors({
     "https://appindio.com",
     "http://localhost:5173",
     "https://oscarlazo1925.github.io",
-    "https://rizalhs.org/"
+    "https://rizalhs.org",
+    "https://55f4d029.rhs-pasig-frontend-cloudflare.pages.dev"
   ],
   credentials: true
 }));
