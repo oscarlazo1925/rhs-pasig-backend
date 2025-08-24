@@ -3,14 +3,12 @@ const userController = require("../controllers/userController");
 const { protect } = require("../middleware/authMiddleware");
 const User = require("../models/User"); // ✅ import your User model
 
-
-
 const router = express.Router();
 
-router.get("/profile", protect, userController.getProfile );
+router.get("/profile", protect, userController.getProfile);
 
 router.put("/profile", protect, async (req, res) => {
-  console.log('profile put')
+  console.log("profile put");
   const { firstname, lastname, middlename, qrCode, batchYear } = req.body;
   req.user.firstname = firstname ?? req.user.firstname;
   req.user.lastname = lastname ?? req.user.lastname;
@@ -21,10 +19,9 @@ router.put("/profile", protect, async (req, res) => {
   res.json(req.user);
 });
 
-
 // 🔹 Scan QR route
 router.post("/scan-qr", async (req, res) => {
-  console.log(req.body.qrCode, '/scan-qr')
+  console.log(req.body.qrCode, "/scan-qr");
   try {
     const { qrCode } = req.body;
 
@@ -40,13 +37,12 @@ router.post("/scan-qr", async (req, res) => {
 
     res.json({
       message: "User found",
-      data: user
+      data: user,
     });
   } catch (error) {
-    console.error("QR Scan Error:", error);   // 👈 this should print the actual problem
+    console.error("QR Scan Error:", error); // 👈 this should print the actual problem
     res.status(500).json({ message: "Server error", error: error.message });
   }
 });
-
 
 module.exports = router;
