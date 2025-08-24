@@ -30,7 +30,8 @@ app.use(cors({
   origin: [
     "https://appindio.com",
     "http://localhost:5173",
-    "https://oscarlazo1925.github.io"
+    "https://oscarlazo1925.github.io",
+    "https://rizalhs.org/"
   ],
   credentials: true
 }));
