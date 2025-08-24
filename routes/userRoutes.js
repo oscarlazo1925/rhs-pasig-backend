@@ -16,7 +16,7 @@ router.put("/profile", protect, async (req, res) => {
   req.user.lastname = lastname ?? req.user.lastname;
   req.user.middlename = middlename ?? req.user.middlename;
   req.user.qrCode = qrCode ?? req.user.qrCode;
-  req.user.batchYear = qrCode ?? req.user.batchYear;
+  req.user.batchYear = batchYear ?? req.user.batchYear;
   await req.user.save();
   res.json(req.user);
 });
