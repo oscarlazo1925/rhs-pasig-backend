@@ -51,12 +51,12 @@ const protect = async (req, res, next) => {
         }
 
         // Get Firebase role (custom claim), fallback to "user"
-        const firebaseRole = decoded.role || "user";
+        // const firebaseRole = decoded.role || "user";
 
-        if (user.role !== firebaseRole) {
-          user.role = firebaseRole;
-          await user.save();
-        }
+        // if (user.role !== firebaseRole) {
+        //   user.role = firebaseRole;
+        //   await user.save();
+        // }
 
         req.user = user;
         next();

@@ -19,9 +19,10 @@ router.post("/google", async (req, res) => {
     const decodedToken = await admin.auth().verifyIdToken(token);
 
     const { uid, email, name, picture } = decodedToken;
-
+    console.log(uid, 'uid')
     // Find or create user
     let user = await User.findOne({ firebaseUid: uid });
+    console.log(user, 'user')
     if (!user) {
       user = await User.create({
         firebaseUid: uid,
